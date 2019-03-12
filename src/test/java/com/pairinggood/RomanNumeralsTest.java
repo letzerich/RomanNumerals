@@ -47,4 +47,17 @@ public class RomanNumeralsTest {
 
     }
 
+    @Test
+    public void whenArabicNumberFourEntered_RomanNumeral_IV_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(4);
+
+        //assert
+        Assert.assertEquals("IV",romanNumeral);
+
+    }
 }
