@@ -3,10 +3,14 @@ package com.pairinggood;
 public class RomanNumeral {
 
     public String convert(int arabicNumber) {
-        if (arabicNumber == 1) {
-            return "I";
-        } else {
-            return "II";
+
+        String romanNumeral = "";
+
+        while (arabicNumber > 0) {
+            romanNumeral = romanNumeral + "I";
+            arabicNumber = arabicNumber - 1;
+
         }
+        return romanNumeral;
     }
 }
