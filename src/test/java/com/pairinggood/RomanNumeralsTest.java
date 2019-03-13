@@ -214,4 +214,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("CI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberFourHundredNintyNineOneEntered_RomanNumeral_ID_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(499);
+
+        //assert
+        Assert.assertEquals("ID",romanNumeral);
+
+    }
 }
