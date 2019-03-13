@@ -216,7 +216,7 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void whenArabicNumberFourHundredNintyNineOneEntered_RomanNumeral_ID_Returned(){
+    public void whenArabicNumberFourHundredNintyNineEntered_RomanNumeral_ID_Returned(){
 
         //arrange
         RomanNumeral converter = new RomanNumeral();
@@ -226,6 +226,20 @@ public class RomanNumeralsTest {
 
         //assert
         Assert.assertEquals("ID",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberFiveHundredEntered_RomanNumeral_D_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(500);
+
+        //assert
+        Assert.assertEquals("D",romanNumeral);
 
     }
 }
