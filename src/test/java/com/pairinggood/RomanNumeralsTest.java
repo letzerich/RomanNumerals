@@ -256,4 +256,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("DI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberNineHundredNinetyNineEntered_RomanNumeral_IM_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(999);
+
+        //assert
+        Assert.assertEquals("IM",romanNumeral);
+
+    }
 }
