@@ -158,4 +158,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("L",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberFiftyOneEntered_RomanNumeral_LI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(51);
+
+        //assert
+        Assert.assertEquals("LI",romanNumeral);
+
+    }
 }
