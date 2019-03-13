@@ -270,4 +270,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("IM",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberOneThousandEntered_RomanNumeral_M_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(1000);
+
+        //assert
+        Assert.assertEquals("M",romanNumeral);
+
+    }
 }
