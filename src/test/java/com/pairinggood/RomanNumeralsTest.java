@@ -174,7 +174,7 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void whenArabicNumberNintyNineEntered_RomanNumeral_IC_Returned(){
+    public void whenArabicNumberNinetyNineEntered_RomanNumeral_IC_Returned(){
 
         //arrange
         RomanNumeral converter = new RomanNumeral();
@@ -216,7 +216,7 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void whenArabicNumberFourHundredNintyNineEntered_RomanNumeral_ID_Returned(){
+    public void whenArabicNumberFourHundredNinetyNineEntered_RomanNumeral_ID_Returned(){
 
         //arrange
         RomanNumeral converter = new RomanNumeral();
