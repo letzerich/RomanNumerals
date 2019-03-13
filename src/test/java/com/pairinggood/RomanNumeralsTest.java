@@ -130,4 +130,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("XI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberFortyNineEntered_RomanNumeral_IL_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(49);
+
+        //assert
+        Assert.assertEquals("IL",romanNumeral);
+
+    }
 }
