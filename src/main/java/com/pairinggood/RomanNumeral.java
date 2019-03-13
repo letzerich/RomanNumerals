@@ -8,6 +8,12 @@ public class RomanNumeral {
 
         while (arabicNumber > 0) {
 
+            if (arabicNumber == 50) {
+
+                arabicNumber = arabicNumber - 50;
+                romanNumeral = romanNumeral + "L";
+            }
+
             if (arabicNumber == 49) {
 
                 arabicNumber = arabicNumber - 49;

@@ -144,4 +144,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("IL",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberFiftyEntered_RomanNumeral_L_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(50);
+
+        //assert
+        Assert.assertEquals("L",romanNumeral);
+
+    }
 }
