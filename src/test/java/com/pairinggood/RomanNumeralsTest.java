@@ -186,4 +186,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("IC",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberOneHundredEntered_RomanNumeral_C_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(100);
+
+        //assert
+        Assert.assertEquals("C",romanNumeral);
+
+    }
 }
