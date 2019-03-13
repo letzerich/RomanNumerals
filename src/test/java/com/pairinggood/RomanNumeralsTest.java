@@ -88,4 +88,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("VI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberNineEntered_RomanNumeral_IX_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(9);
+
+        //assert
+        Assert.assertEquals("IX",romanNumeral);
+
+    }
 }
