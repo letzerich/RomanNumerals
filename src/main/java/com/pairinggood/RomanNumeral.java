@@ -8,7 +8,7 @@ public class RomanNumeral {
 
         while (arabicNumber > 0) {
 
-            if (arabicNumber == 1000) {
+            if (arabicNumber >= 1000) {
 
                 arabicNumber = arabicNumber - 1000;
                 romanNumeral = romanNumeral + "M";
