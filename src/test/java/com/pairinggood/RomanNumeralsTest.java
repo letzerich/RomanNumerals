@@ -60,4 +60,32 @@ public class RomanNumeralsTest {
         Assert.assertEquals("IV",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberFiveEntered_RomanNumeral_V_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(5);
+
+        //assert
+        Assert.assertEquals("V",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberSixEntered_RomanNumeral_VI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(6);
+
+        //assert
+        Assert.assertEquals("VI",romanNumeral);
+
+    }
 }
