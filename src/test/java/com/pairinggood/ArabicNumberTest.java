@@ -24,4 +24,14 @@ public class ArabicNumberTest {
 
         Assert.assertEquals(2, arabicNumber);
     }
+
+    @Test
+    public void whenRomanRomanNumeral_III_EnteredArabicNumber_3_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("III");
+
+        Assert.assertEquals(3, arabicNumber);
+    }
 }
