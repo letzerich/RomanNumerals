@@ -20,6 +20,11 @@ public class ArabicNumber {
                 arabicNumber = arabicNumber + 5;
             }
 
+            if (letter == 'X') {
+
+                arabicNumber = arabicNumber + 10;
+            }
+
         }
 
         return arabicNumber;
