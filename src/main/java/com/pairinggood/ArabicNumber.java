@@ -30,6 +30,16 @@ public class ArabicNumber {
                 arabicNumber = arabicNumber + 50;
             }
 
+            if (letter == 'C') {
+
+                arabicNumber = arabicNumber + 100;
+            }
+
+            if (letter == 'D') {
+
+                arabicNumber = arabicNumber + 500;
+            }
+
         }
 
         return arabicNumber;
