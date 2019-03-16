@@ -34,4 +34,14 @@ public class ArabicNumberTest {
 
         Assert.assertEquals(3, arabicNumber);
     }
+
+    @Test
+    public void whenRomanRomanNumeral_V_EnteredArabicNumber_5_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("V");
+
+        Assert.assertEquals(5, arabicNumber);
+    }
 }

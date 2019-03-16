@@ -9,9 +9,17 @@ public class ArabicNumber {
         int arabicNumber = 0;
 
         for (char letter : letters) {
+
             if (letter == 'I') {
+
                 arabicNumber = arabicNumber + 1;
             }
+
+            if (letter == 'V') {
+
+                arabicNumber = arabicNumber + 5;
+            }
+
         }
 
         return arabicNumber;
