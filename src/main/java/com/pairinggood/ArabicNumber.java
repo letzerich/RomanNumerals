@@ -4,9 +4,14 @@ public class ArabicNumber {
 
     public int convert(String romanNumeral) {
 
-        final char[] letters = romanNumeral.toCharArray();
-
         int arabicNumber = 0;
+
+        if (romanNumeral.contains("IV")) {
+            arabicNumber = arabicNumber +4;
+                    romanNumeral = romanNumeral.replace("IV", "");
+        }
+
+        final char[] letters = romanNumeral.toCharArray();
 
         for (char letter : letters) {
 
