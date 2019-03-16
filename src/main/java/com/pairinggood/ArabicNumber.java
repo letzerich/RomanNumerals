@@ -25,6 +25,11 @@ public class ArabicNumber {
                 arabicNumber = arabicNumber + 10;
             }
 
+            if (letter == 'L') {
+
+                arabicNumber = arabicNumber + 50;
+            }
+
         }
 
         return arabicNumber;
