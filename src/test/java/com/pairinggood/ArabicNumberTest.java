@@ -84,4 +84,14 @@ public class ArabicNumberTest {
 
         Assert.assertEquals(500, arabicNumber);
     }
+
+    @Test
+    public void whenRomanRomanNumeral_M_EnteredArabicNumber_1000_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("M");
+
+        Assert.assertEquals(1000, arabicNumber);
+    }
 }

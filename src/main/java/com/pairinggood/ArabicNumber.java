@@ -40,6 +40,11 @@ public class ArabicNumber {
                 arabicNumber = arabicNumber + 500;
             }
 
+            if (letter == 'M') {
+
+                arabicNumber = arabicNumber + 1000;
+            }
+
         }
 
         return arabicNumber;
