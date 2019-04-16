@@ -124,4 +124,24 @@ public class ArabicNumberTest {
 
         Assert.assertEquals(1066, arabicNumber);
     }
+
+//    @Test
+//    public void whenRomanRomanNumeral_MCMLXXXIX_EnteredArabicNumber_1989_Returned(){
+//
+//        ArabicNumber converter = new ArabicNumber();
+//
+//        int arabicNumber = converter.convert("MCMLXXXIX");
+//
+//        Assert.assertEquals(1989, arabicNumber);
+//    }
+
+    @Test
+    public void whenRomanRomanNumeral_IX_EnteredArabicNumber_9_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("IX");
+
+        Assert.assertEquals(9, arabicNumber);
+    }
 }

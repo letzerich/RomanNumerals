@@ -11,6 +11,11 @@ public class ArabicNumber {
                     romanNumeral = romanNumeral.replace("IV", "");
         }
 
+        if (romanNumeral.contains("IX")) {
+            arabicNumber = arabicNumber +9;
+                    romanNumeral = romanNumeral.replace("IX", "");
+        }
+
         final char[] letters = romanNumeral.toCharArray();
 
         arabicNumber = convertRomanToArabic(arabicNumber, letters);
