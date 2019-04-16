@@ -327,17 +327,17 @@ public class RomanNumeralsTest {
 
     }
 
-//    @Test
-//    public void whenArabicNumberOneThousandNineHundredEightyNineEntered_RomanNumeral_MCMLXXXIX_Returned(){
-//
-//        //arrange
-//        RomanNumeral converter = new RomanNumeral();
-//
-//        //act
-//        String romanNumeral = converter.convert(1989);
-//
-//        //assert
-//        Assert.assertEquals("MCMLXXXIX",romanNumeral);
+    @Test
+    public void whenArabicNumberOneThousandNineHundredEightyNineEntered_RomanNumeral_MCMLXXXIX_Returned(){
 
-//    }
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(1989);
+
+        //assert
+        Assert.assertEquals("MCMLXXXIX",romanNumeral);
+
+    }
 }
