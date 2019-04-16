@@ -114,4 +114,14 @@ public class ArabicNumberTest {
 
         Assert.assertEquals(34, arabicNumber);
     }
+
+    @Test
+    public void whenRomanRomanNumeral_MLXVI_EnteredArabicNumber_1066_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("MLXVI");
+
+        Assert.assertEquals(1066, arabicNumber);
+    }
 }

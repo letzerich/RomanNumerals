@@ -13,6 +13,12 @@ public class ArabicNumber {
 
         final char[] letters = romanNumeral.toCharArray();
 
+        arabicNumber = convertRomanToArabic(arabicNumber, letters);
+
+        return arabicNumber;
+    }
+
+    private int convertRomanToArabic(int arabicNumber, char[] letters) {
         for (char letter : letters) {
 
             if (letter == 'I') {
@@ -51,7 +57,6 @@ public class ArabicNumber {
             }
 
         }
-
         return arabicNumber;
     }
 }
