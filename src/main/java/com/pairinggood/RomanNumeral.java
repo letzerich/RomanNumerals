@@ -20,6 +20,12 @@ public class RomanNumeral {
                 romanNumeral = romanNumeral + "IM";
             }
 
+            if (arabicNumber == 900) {
+
+                arabicNumber = arabicNumber - 900;
+                romanNumeral = romanNumeral + "CM";
+            }
+
             if (arabicNumber >= 500) {
 
                 arabicNumber = arabicNumber - 500;

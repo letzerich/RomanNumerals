@@ -312,4 +312,32 @@ public class RomanNumeralsTest {
         Assert.assertEquals("MLXVI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberNineHundredEntered_RomanNumeral_CM_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(900);
+
+        //assert
+        Assert.assertEquals("CM",romanNumeral);
+
+    }
+
+//    @Test
+//    public void whenArabicNumberOneThousandNineHundredEightyNineEntered_RomanNumeral_MCMLXXXIX_Returned(){
+//
+//        //arrange
+//        RomanNumeral converter = new RomanNumeral();
+//
+//        //act
+//        String romanNumeral = converter.convert(1989);
+//
+//        //assert
+//        Assert.assertEquals("MCMLXXXIX",romanNumeral);
+
+//    }
 }
