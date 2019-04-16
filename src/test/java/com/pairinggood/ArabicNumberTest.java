@@ -46,6 +46,16 @@ public class ArabicNumberTest {
     }
 
     @Test
+    public void whenRomanRomanNumeral_IX_EnteredArabicNumber_9_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("IX");
+
+        Assert.assertEquals(9, arabicNumber);
+    }
+
+    @Test
     public void whenRomanRomanNumeral_X_EnteredArabicNumber_10_Returned(){
 
         ArabicNumber converter = new ArabicNumber();
@@ -86,6 +96,16 @@ public class ArabicNumberTest {
     }
 
     @Test
+    public void whenRomanRomanNumeral_CM_EnteredArabicNumber_900_Returned(){
+
+        ArabicNumber converter = new ArabicNumber();
+
+        int arabicNumber = converter.convert("CM");
+
+        Assert.assertEquals(900, arabicNumber);
+    }
+
+    @Test
     public void whenRomanRomanNumeral_M_EnteredArabicNumber_1000_Returned(){
 
         ArabicNumber converter = new ArabicNumber();
@@ -123,25 +143,5 @@ public class ArabicNumberTest {
         int arabicNumber = converter.convert("MLXVI");
 
         Assert.assertEquals(1066, arabicNumber);
-    }
-
-//    @Test
-//    public void whenRomanRomanNumeral_MCMLXXXIX_EnteredArabicNumber_1989_Returned(){
-//
-//        ArabicNumber converter = new ArabicNumber();
-//
-//        int arabicNumber = converter.convert("MCMLXXXIX");
-//
-//        Assert.assertEquals(1989, arabicNumber);
-//    }
-
-    @Test
-    public void whenRomanRomanNumeral_IX_EnteredArabicNumber_9_Returned(){
-
-        ArabicNumber converter = new ArabicNumber();
-
-        int arabicNumber = converter.convert("IX");
-
-        Assert.assertEquals(9, arabicNumber);
     }
 }

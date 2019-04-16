@@ -16,6 +16,11 @@ public class ArabicNumber {
                     romanNumeral = romanNumeral.replace("IX", "");
         }
 
+        if (romanNumeral.contains("CM")) {
+            arabicNumber = arabicNumber +900;
+                    romanNumeral = romanNumeral.replace("CM", "");
+        }
+
         final char[] letters = romanNumeral.toCharArray();
 
         arabicNumber = convertRomanToArabic(arabicNumber, letters);
