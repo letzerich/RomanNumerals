@@ -298,4 +298,18 @@ public class RomanNumeralsTest {
         Assert.assertEquals("MI",romanNumeral);
 
     }
+
+    @Test
+    public void whenArabicNumberOneThousandSixtySixEntered_RomanNumeral_MLXVI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(1066);
+
+        //assert
+        Assert.assertEquals("MLXVI",romanNumeral);
+
+    }
 }
